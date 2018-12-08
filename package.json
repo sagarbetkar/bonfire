@@ -1,0 +1,35 @@
+{
+  "name": "bonfire",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "dev": "parcel public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarbetkar/bonfire.git"
+  },
+  "author": "sagarbetkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagarbetkar/bonfire/issues"
+  },
+  "homepage": "https://github.com/sagarbetkar/bonfire#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "node-sass": "^4.10.0",
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
