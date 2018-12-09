@@ -5,20 +5,21 @@ import secondSlide from '../../assets/images/ESPRIT-Women-Coats-2.jpg';
 import thirdSlide from '../../assets/images/ESPRIT-Women-Coats-3.jpg';
 import fourthSlide from '../../assets/images/ESPRIT-Women-Coats-4.jpg';
 
+const photos = [firstSlide, secondSlide, thirdSlide, fourthSlide];
+
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       active: 0
     };
+
     this.handleIndexClick = this.handleIndexClick.bind(this);
   }
-  handleIndexClick(event) {
-    this.setState({
-      active: event.target.dataset
-    });
-  }
 
+  handleIndexClick() {
+    console.log();
+  }
   render() {
     return (
       <div className="container">
@@ -54,7 +55,7 @@ class Carousel extends React.Component {
                   onClick={this.handleIndexClick}
                   alt="First slide"
                   src={firstSlide}
-                  dataset="0"
+                  id="carousel-selector-0"
                   className="img-thumbnail"
                 />
               </a>
@@ -65,7 +66,7 @@ class Carousel extends React.Component {
                   onClick={this.handleIndexClick}
                   alt="Second slide"
                   src={secondSlide}
-                  dataset="1"
+                  id="carousel-selector-1"
                   className="img-thumbnail"
                 />
               </a>
@@ -76,7 +77,7 @@ class Carousel extends React.Component {
                   onClick={this.handleIndexClick}
                   alt="Third slide"
                   src={thirdSlide}
-                  dataset="2"
+                  id="carousel-selector-2"
                   className="img-thumbnail"
                 />
               </a>
@@ -87,7 +88,7 @@ class Carousel extends React.Component {
                   onClick={this.handleIndexClick}
                   alt="Fourth slide"
                   src={fourthSlide}
-                  dataset="3"
+                  id="carousel-selector-3"
                   className="img-thumbnail"
                 />
               </a>

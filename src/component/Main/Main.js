@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Main/Main.scss';
 import Carousel from '../Carousel/Carousel';
+import Form from '../Form/Form';
 
 class Main extends React.Component {
   render() {
@@ -57,48 +58,7 @@ class Main extends React.Component {
                 <li>Free shipping with 4 days delivery</li>
               </ul>
             </div>
-            <div className="small-form">
-              <form className="form-horizontal">
-                <div className="form-row">
-                  <div className="col-md-4 mb-3">
-                    <label>
-                      COLOR :
-                      <select className="form-control">
-                        <option value="red">Red</option>
-                        <option value="green">Green</option>
-                        <option value="blue">Blue</option>
-                        <option value="yellow">Yellow</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div className="col-md-4 mb-3">
-                    <label>
-                      SIZE :
-                      <select className="form-control">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extra-large">Extra-Large</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div className="col-md-4 mb-3">
-                    <label>
-                      Quantity :
-                      <input type="text" />
-                    </label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div className="clear">clear selection</div>
-            <div className="buttons-grp">
-              <button className="btn">add to cart</button>
-              <button className="btn">
-                <i className="fa fa-heart-o" aria-hidden="true" />
-                add to wishlist
-              </button>
-            </div>
+            <Form />
             <div className="share-link">
               SHARE THIS
               <button className="btn btn-sm btn-primary">

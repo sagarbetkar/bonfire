@@ -14,7 +14,7 @@ class Title extends React.Component {
           </div>
           <div className="col-md-4">
             <div className="cart-button">
-              <button className="btn">Cart (3)</button>
+              <button className="btn">Cart {0}</button>
             </div>
           </div>
         </div>
