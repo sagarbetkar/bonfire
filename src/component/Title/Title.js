@@ -1,8 +1,17 @@
 import React from 'react';
 import '../Title/Title.scss';
+import Modal from '../Modal/Modal';
 
 class Title extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showModal: false
+    };
+  }
+  toggleModal = () => this.setState({showModal: !this.state.showModal});
   render() {
+    const {showModal} = this.state;
     return (
       <div className="container">
         <div className="row">
@@ -19,7 +28,19 @@ class Title extends React.Component {
           </div>
           <div className="col-md-4">
             <div className="cart-button">
-              <button className="btn">Cart {0}</button>
+              <button className="btn" onClick={this.toggleModal}>
+                Cart {0}
+              </button>
+              {showModal ? (
+                <Modal className="modal">
+                  <h1>Cart List</h1>
+                  <div className="buttons">
+                    <button className="btn btn-primary" onClick={this.toggleModal}>
+                      Checkout
+                    </button>
+                  </div>
+                </Modal>
+              ) : null}
             </div>
           </div>
         </div>
