@@ -31,6 +31,7 @@ class Form extends React.Component {
 
   decrement() {
     this.setState({
+      // eslint-disable-next-line
       quantity: this.state.quantity > 1 ? --this.state.quantity : 1
     });
   }

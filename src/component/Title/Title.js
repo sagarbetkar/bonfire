@@ -7,7 +7,12 @@ class Title extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <div className="country-dropdown">dropdown</div>
+            <div className="country-dropdown">
+              <select className="form-control">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+              </select>
+            </div>
           </div>
           <div className="col-md-4">
             <div className="name">bonfire</div>
