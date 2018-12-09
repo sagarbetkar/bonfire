@@ -45,7 +45,7 @@ class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.color != '' && this.state.size != '' && this.state.quantity != '') {
+    if (this.state.color !== '' && this.state.size !== '' && this.state.quantity !== '') {
       alert('Added to cart');
       const newItem = {
         color: this.state.color,
@@ -104,7 +104,7 @@ class Form extends React.Component {
                     </button>
                   </span>
                 </div>
-                <input type="text" className="form-control" value={this.state.quantity} />
+                <input type="text" className="form-control" value={this.state.quantity} readOnly />
                 <div className="input-group-append">
                   <span className="input-group-text">
                     <button className="btn" onClick={this.decrement} type="button">
